@@ -1,5 +1,5 @@
 exports.parseQuery = function (text){
-  var reg = /\/(\w+\b)\s?(.+)/;
+  var reg = /\/(\w+\b)\s?(.*)/;
 
   var res = text.match(reg);
 
@@ -7,5 +7,5 @@ exports.parseQuery = function (text){
 }
 
 exports.buildResponse = function (arr){
-  
+
 }
