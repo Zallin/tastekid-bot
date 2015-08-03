@@ -1,8 +1,11 @@
-var tas_api = require('./tas_api.js');
+var tas_api = require('./tas_api.js'),
+    config = require('./config.json');
 
 module.exports = function (tel_api){
 
   tel_api.on('r', function (req){
+    if(!req.text) return tel_api.sendMessage(config.badquery, req);
+
     tas_api.request(req.query.text, function (res){
 
       if(res.Similar.Results.length > 0){
@@ -20,8 +23,12 @@ module.exports = function (tel_api){
 
         tel_api.sendMessage(text, req);
       } else {
-        tel_api.sendMessage('Unfortunately, nothing has been found', req);
+        tel_api.sendMessage(config.notFound, req);
       }
     });
+  });
+
+  tel_api.on('start', function(req){
+    tel_api.sendMessage(config.greetings, req);
   });
 }

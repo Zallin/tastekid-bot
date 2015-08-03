@@ -1,4 +1,8 @@
 {
-  "telegram_api_key" : "Telegram api key",
-  "tastekid_api_key" : "Tastekid api key"
+  "telegram_api_key" : "",
+  "tastekid_api_key" : "",
+  "greetings" : "Hello there. I am a recommendations bot from tastekid.com.",
+  "notFound" : "Unfortunately, nothing has been found",
+  "unsupported" : "Unsupported command",
+  "badquery" : "Invalid query"
 }
