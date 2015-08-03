@@ -1,12 +1,6 @@
-var https = require('https'),
-    CronJob = require('cron').CronJob;
+var api = require('./tel_api.js'),
+    handlers = require('./handlers.js');
 
-var TEL_API_KEY = /*Telegram API key here*/;
+api.getUpdates();
 
-new CronJob('* * * * * *', function (){
-  requestBot();
-}, null, true);
-
-function requestBot(method, fn){
-
-}
+handlers(api);
