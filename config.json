@@ -1,8 +1,10 @@
 {
-  "telegram_api_key" : "",
-  "tastekid_api_key" : "",
-  "greetings" : "Hello there. I am a recommendations bot from tastekid.com.",
+  "telegram_api_key" : "103224929:AAHleDldkTlowOOsDYM-wAO6V-55HPpTH7c",
+  "tastekid_api_key" : "149685-TasteKid-9B8NFUYR",
+  "types" : ["music", "books", "authors", "games", "shows", "movies"],
+  "greetings" : "Hello. I am recommendations bot from tastekid.com.\n",
   "notFound" : "Unfortunately, nothing has been found",
   "unsupported" : "Unsupported command",
-  "badquery" : "Invalid query"
+  "badquery" : "Invalid query",
+  "help" : "Supported commands:\n/start Print startup info\n/help Print supported commands\n /r Get recommendations of any type \n And more specific:\n/rbooks /rauthors /rmusic /rmovies /rshows /rgames \nExample query : /rbooks Ray Bradbury\n Retrieves all books similar to Bradbury`s"
 }
