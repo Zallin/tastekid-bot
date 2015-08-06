@@ -1,6 +1,6 @@
 {
-  "telegram_api_key" : "103224929:AAHleDldkTlowOOsDYM-wAO6V-55HPpTH7c",
-  "tastekid_api_key" : "149685-TasteKid-9B8NFUYR",
+  "telegram_api_key" : "",
+  "tastekid_api_key" : "",
   "types" : ["music", "books", "authors", "games", "shows", "movies"],
   "greetings" : "Hello. I am recommendations bot from tastekid.com.\n",
   "notFound" : "Unfortunately, nothing has been found",
